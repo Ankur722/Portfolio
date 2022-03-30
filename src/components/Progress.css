@@ -1,0 +1,39 @@
+.progress {
+  display: flex;
+  justify-content: center;
+}
+
+.progress__text {
+  margin-right: 20px;
+  flex: 0.1;
+}
+
+.progress_container {
+  margin-top: 24px;
+  flex: 0.4;
+}
+
+.progress__span {
+  padding: 10px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.progress__parent {
+  height: 20px;
+  width: 100%;
+  background-color: "whitesmoke";
+  border-radius: 40;
+  margin: 50;
+}
+
+@media only screen and (max-width: 600px) {
+  .progress__text {
+    margin-right: 20px;
+    flex: 0.3;
+  }
+  .progress_container {
+    margin-top: 24px;
+    flex: 0.6;
+  }
+}

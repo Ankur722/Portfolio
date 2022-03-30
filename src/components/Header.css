@@ -1,0 +1,29 @@
+.flex-container {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  margin: 10px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+a:hover {
+  color: #fff;
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    margin-top: 25px;
+  }
+  a {
+    font-size: 25px;
+  }
+}

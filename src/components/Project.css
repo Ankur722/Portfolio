@@ -1,0 +1,76 @@
+.project::-webkit-scrollbar {
+  display: none;
+}
+
+.project__row {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project__row > a {
+  display: flex;
+  flex: 1 0 21%;
+}
+
+.project__detail {
+  display: flex;
+  flex: 1 0 20%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.project__image {
+  width: 25vw;
+  height: 25vh;
+  display: flex;
+  flex: 1 0 21%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding: 10px;
+  object-fit: contain;
+  margin-right: 10px;
+  margin-left: 20px;
+  transition: transform 450ms;
+}
+
+.project__image:hover {
+  transform: scale(1.08);
+}
+
+.project__image > a > img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .project__row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project__image {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 10px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 450ms;
+    width: 60vw;
+  }
+
+  .project__image > a {
+    width: 60vw;
+  }
+
+  .project__image > a > img {
+    width: 100%;
+    height: auto;
+  }
+}
